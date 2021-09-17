@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+   script(src='/static/index.js')
+
+block style 
+     style 
+    include ../static/style.css 
+
+block content
+     section#introSection 
+        div Welcome to Rahul's Dance Academy 
+        div.small Eat Sleep Dance Reapet 
+
+    section#messionSection 
+        h2  Our Mession
+        div.card
+             h3 Dance Perfection
+             div.card-box
+                 div.card-img
+                        img(src="/static/pose1.png")
+                 div.card-contant
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit.          
+        div.card
+             h3 Dance the why you like
+              div.card-box
+                 div.card-img
+                        img(src="/static/pose2.jpg")
+                 div.card-contant
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+        div.card
+             h3 Expert Teaching
+              div.card-box
+                 div.card-img
+                        img(src="/static/pose.png")
+                 div.card-contant
+                      p Lorem ipsum dolor sit amet consectetur adipisicing elit.    
+    section#sponsorsSection 
+        h2  Our sponsors 
+        div#sponsors
+            img(src="/static/apple.jpg", alt="Sponsor Image", class="spImage")       
+            img(src="/static/hp.png", alt="Sponsor Image", class="spImage")       
+            img(src="/static/skype.png", alt="Sponsor Image", class="spImage")       
+            img(src="/static/micosoft.jpeg", alt="Sponsor Image", class="spImage")          
+
+     footer#footer 
+         | Copyright 2021 RahulChoudhary.com | All rights reserved          
